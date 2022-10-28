@@ -1,35 +1,5 @@
+from alphabet import alphabet
 import numpy
-
-
-alphabet = {
-        ' ': 0,
-        'a': 1,
-        'b': -1,
-        'c': 2,
-        'd': -2,
-        'e': 3,
-        'f': -3,
-        'g': 4,
-        'h': -4,
-        'i': 5,
-        'j': -5,
-        'k': 6,
-        'l': -6,
-        'm': 7,
-        'n': -7,
-        'o': 8,
-        'p': -8,
-        'q': 9,
-        'r': -9,
-        's': 10,
-        't': -10,
-        'u': 11,
-        'v': -11,
-        'w': 12,
-        'x': -12,
-        'y': 13,
-        'z': -13
-    }
 
 
 class Colors:
@@ -52,7 +22,7 @@ def generate_message_matrix(message):
 
 
 def generate_random_upper_triangular_matrix():
-    a = numpy.random.randint(-50, 50, size=(3, 3))
+    a = numpy.random.randint(-10, 11, size=(3, 3))
     a[0][0] = numpy.random.choice([-1, 1])
     a[1][1] = numpy.random.choice([-1, 1])
     a[2][2] = numpy.random.choice([-1, 1])
@@ -61,7 +31,7 @@ def generate_random_upper_triangular_matrix():
 
 
 def generate_random_lower_triangular_matrix():
-    a = numpy.random.randint(-50, 50, size=(3, 3))
+    a = numpy.random.randint(-10, 11, size=(3, 3))
     a[0][0] = numpy.random.choice([-1, 1])
     a[1][1] = numpy.random.choice([-1, 1])
     a[2][2] = numpy.random.choice([-1, 1])
