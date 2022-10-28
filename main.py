@@ -22,7 +22,7 @@ def generate_message_matrix(message):
 
 
 def generate_random_upper_triangular_matrix():
-    a = numpy.random.randint(-50, 50, size=(3, 3))
+    a = numpy.random.randint(-10, 11, size=(3, 3))
     a[0][0] = numpy.random.choice([-1, 1])
     a[1][1] = numpy.random.choice([-1, 1])
     a[2][2] = numpy.random.choice([-1, 1])
@@ -31,7 +31,7 @@ def generate_random_upper_triangular_matrix():
 
 
 def generate_random_lower_triangular_matrix():
-    a = numpy.random.randint(-50, 50, size=(3, 3))
+    a = numpy.random.randint(-10, 11, size=(3, 3))
     a[0][0] = numpy.random.choice([-1, 1])
     a[1][1] = numpy.random.choice([-1, 1])
     a[2][2] = numpy.random.choice([-1, 1])
